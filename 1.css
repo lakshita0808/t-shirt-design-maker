@@ -1,0 +1,321 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0; /* Remove default padding */
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 150px; /* Adjust the margin-right to add space between links */
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Remove margin-right from the last list item */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.background-image {
+    background-image: url('https://img.freepik.com/free-photo/plain-smooth-green-wall-texture_53876-129746.jpg?size=626&ext=jpg&ga=GA1.1.1395880969.1710115200&semt=ais.jpg?size');
+    background-size: cover;
+    background-position: center;
+}
+
+main {
+    padding: 20px;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    font-size: 60px;
+    margin-bottom: 30px; /* Reduce margin-bottom to move h2 somewhat above */
+    color: #000000;
+    background-color: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.hero h5 {
+    font-size: 20px;
+    margin-bottom: 30px; /* Add more margin-bottom to create space between p and btn */
+    color: #000000;
+    background-color: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.textimg {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+.text89{
+    display: flex;
+    align-items: center;
+    margin: 200px;  
+}
+
+#text1 {
+    width: 600px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left;
+    text-size-adjust: 20px;
+}
+/* Add this CSS to your existing CSS file or create a new one */
+
+#text2 {
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin-right: 80px; /* Add margin to create space between text and video */
+    justify-content: space-around;
+}
+#text3 {
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    text-size-adjust: 20px;
+    justify-content: space-around;
+    
+}
+
+.content-container {
+    display: flex;
+    align-items: flex-start; /* Align items at the start of the flex container */
+}
+
+.text-content {
+    flex: 1; /* Take up remaining space */
+}
+
+
+
+
+#img1 {
+    margin-right: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    border-image: fill;
+    float: right;
+}
+
+#img1 img {
+    flex: 1 1 200px;
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.designs {
+    display: none; /* Initially hide the designs section */
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.designs .template {
+    width: 200px;
+    height: 200px;
+    background-color: #ccc;
+    margin: 10px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.template-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.template {
+    flex: 1 1 200px;
+    margin: 10px;
+    text-align: center;
+}
+
+.template img {
+    max-width: 100%;
+    height: auto;
+}
+.template-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    padding: 20px;
+}
+
+.template {
+    width: 23%; /* Adjust as needed for proper spacing */
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+
+.template img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+
+/* CSS styles for contact details */
+.contact-details {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-details h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-details ul li {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.contact-details ul li:first-child {
+    font-weight: bold;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.toolbox {
+    float: left;
+    width: 200px;
+    padding: 10px;
+}
+
+.toolbox h2 {
+    margin-bottom: 10px;
+}
+
+.color-picker, .text-tools, .image-tools {
+    margin-bottom: 20px;
+}
+
+.canvas {
+    float: left;
+    width: 400px;
+    padding: 10px;
+    position: relative;
+}
+
+canvas {
+    border: 1px solid #000;
+}
+
+#tshirt {
+    width: 100%;
+    height: auto;
+}
+
+#droppedItems {
+    position: absolute;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Start with opacity 0 */
+        transform: scale(0.8); /* Start with a smaller size */
+    }
+    100% {
+        opacity: 1; /* End with opacity 1 */
+        transform: scale(1); /* End with original size */
+    }
+}
+
+/* Apply the animation to images */
+.image-container img {
+    opacity: 0; /* Initially hide images */
+    animation: fadeIn 1s ease-in-out forwards; /* Apply animation */
+   
+    object-fit: cover; /* Fit image within container */
+    border-radius: 8px; /* Add border radius if needed */
+    margin-bottom: 20px; /* Add spacing between images */
+    width: 150px; /* Set the width of each image */
+    height: 150px; /* Set the height of each image */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    border-radius: 8px; /* Add border radius if desired */
+
+}
+
+
+
+.image-container {
+    width: 150px; /* Set the width of each image */
+    height: 150px; /* Set the height of each image */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    border-radius: 8px; /* Add border radius if desired */
+    overflow: hidden;
+   
+}
+
+
+

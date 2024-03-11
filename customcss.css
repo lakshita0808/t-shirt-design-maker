@@ -1,0 +1,108 @@
+body {
+	background-color: #F1F7ED;
+}
+img {
+	width: 100%;
+}
+ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+datalist {
+	display: flex;
+	justify-content: space-between;
+	font-size: 13px;
+}
+.header {
+	background-color: #B1EDE8;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.section {
+	background-color: white;
+}
+.tshirt {
+	padding-right: 30px;
+	position: relative;
+}
+.tshirt #tshirt-preview {
+	position: absolute;
+	top: 25%;
+	left: 30%;
+	width: 37%;
+	font-size: 24px;
+}
+.tshirt-colors  {
+	display: flex;
+}
+.tshirt-colors .tshirt-color {
+	width: 40px;
+	height: 25px;
+	border-radius: 10px;
+	margin-right: 10px;
+}
+.tshirt-colors .tshirt-color:nth-child(1) {
+	background-color: black;
+}
+.tshirt-colors .tshirt-color:nth-child(2) {
+	background-color: blue;
+}
+.tshirt-colors .tshirt-color:nth-child(3) {
+	background-color: green;
+}
+.tshirt-colors .tshirt-color:nth-child(4) {
+	background-color: red;
+}
+.tshirt-colors .tshirt-color.selected {
+	border: 3px solid #aaa;
+}
+.error-message {
+	color: red;
+	margin-top: 5px;
+}
+.cart {
+	background-color: #D4F2D2;
+	border: 1px solid black;
+	width: 100%;
+	padding: 10px;
+}
+.cart .cart-pricing {
+	display: flex;
+	justify-content: space-between;
+}
+.hide {
+	display: none;
+}
+
+.uploaded-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.color-selection {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.color-option {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000; /* Add a black border around the button */
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.draggable-text {
+	position: absolute;
+	cursor: move;
+	user-select: none;
+	z-index: 100; /* Ensure the text is on top of the image */
+}
