@@ -299,8 +299,8 @@ canvas {
     object-fit: cover; /* Fit image within container */
     border-radius: 8px; /* Add border radius if needed */
     margin-bottom: 20px; /* Add spacing between images */
-    width: 150px; /* Set the width of each image */
-    height: 150px; /* Set the height of each image */
+    width: 200px; /* Set the width of each image */
+    height: 200px; /* Set the height of each image */
     object-fit: cover; /* Maintain aspect ratio and cover the container */
     border-radius: 8px; /* Add border radius if desired */
 
@@ -309,8 +309,8 @@ canvas {
 
 
 .image-container {
-    width: 150px; /* Set the width of each image */
-    height: 150px; /* Set the height of each image */
+    width: 200px; /* Set the width of each image */
+    height: 200px; /* Set the height of each image */
     object-fit: cover; /* Maintain aspect ratio and cover the container */
     border-radius: 8px; /* Add border radius if desired */
     overflow: hidden;
