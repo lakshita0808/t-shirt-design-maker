@@ -98,7 +98,7 @@ main {
 /* Add this CSS to your existing CSS file or create a new one */
 
 #text2 {
-    max-width: 600px;
+    max-width: 50vw;
     padding: 20px;
     background-color: #fff;
 border-radius: 8px;
@@ -108,7 +108,7 @@ border-radius: 8px;
     justify-content: space-around;
 }
 #text3 {
-    width: 100%;
+    width: 100vw;
     padding: 20px;
     background-color: #fff;
 border-radius: 8px;
@@ -153,7 +153,7 @@ footer {
 
 .designs {
     display: none; /* Initially hide the designs section */
-    padding: 20px;
+    padding: 20vw;
     justify-content: space-around;
     align-items: center;
 }
@@ -299,8 +299,8 @@ canvas {
     object-fit: cover; /* Fit image within container */
     border-radius: 8px; /* Add border radius if needed */
     margin-bottom: 20px; /* Add spacing between images */
-    width: 200px; /* Set the width of each image */
-    height: 200px; /* Set the height of each image */
+    width: 20vw; /* Set the width of each image */
+    height: 20vw; /* Set the height of each image */
     object-fit: cover; /* Maintain aspect ratio and cover the container */
     border-radius: 8px; /* Add border radius if desired */
 
@@ -309,8 +309,8 @@ canvas {
 
 
 .image-container {
-    width: 200px; /* Set the width of each image */
-    height: 200px; /* Set the height of each image */
+    width: 20vw; /* Set the width of each image */
+    height: 20vw; /* Set the height of each image */
     object-fit: cover; /* Maintain aspect ratio and cover the container */
     border-radius: 8px; /* Add border radius if desired */
     overflow: hidden;
