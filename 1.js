@@ -75,26 +75,4 @@ function addText() {
     document.getElementById("droppedItems").appendChild(p);
 }
 
-        // JavaScript to handle image animation
-        document.addEventListener("DOMContentLoaded", function() {
-            const images = document.querySelectorAll(".image-container img");
-            let currentIndex = 0;
-
-            function showNextImage() {
-                // Hide the current image
-                images[currentIndex].style.display = "none";
-
-                // Move to the next image or loop back to the first image
-                currentIndex = (currentIndex + 1) % images.length;
-
-                // Display the next image
-                images[currentIndex].style.display = "block";
-
-                // Repeat the process after a certain time interval (e.g., 3 seconds)
-                setTimeout(showNextImage, 3000);
-            }
-
-            // Start the image animation
-            showNextImage();
-        });
-    
+       
