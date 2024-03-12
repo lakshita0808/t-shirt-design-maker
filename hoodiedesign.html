@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Template Hoodie Designs</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="customcss.css">
+    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>T-Shirt Maker</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" id="home">Home</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Customize</button>
+                        <div class="dropdown-content">
+                            <a href="newcustom.html">T-Shirt</a>
+                            <a href="customh.html">Hoodie</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Design</button>
+                        <div class="dropdown-content">
+                            <a href="design.html">T-Shirt</a>
+                            <a href="hoodiedesign.html">Hoodie</a>
+                            <a href="designjersey.html">Jersey</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li><a href="contact.html" id="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-5 section py-3 tshirt">
+                <img id="tshirt-image" src="blackhoodie.jpg" />
+                <!-- This is the element that appears on top of the t-shirt -->
+                <div id="tshirt-preview" class="draggable-text"></div>
+            </div>
+            <div class="col-12 col-md-4 section py-3 customize">
+                <h2>Customize Hoodie</h2>
+                <form id="tshirt-form">
+                    <div class="form-group">
+                        <label>Select Hoodie Color:</label>
+                        <div class="color-selection">
+                            <button class="color-option" data-color="white" style="background-color: white;"></button>
+                            <button class="color-option" data-color="black" style="background-color: black;"></button>
+                            <button class="color-option" data-color="red" style="background-color: red;"></button>
+                            <button class="color-option" data-color="blue" style="background-color: blue;"></button>
+                            <button class="color-option" data-color="yellow" style="background-color: yellow;"></button>
+                        </div>
+                        <label for="tshirt-text">Text to put on Hoodie:</label>
+                        <input type="text" class="form-control" id="tshirt-text" placeholder="Enter text" autocomplete="off">
+                        <small id="tshirt-text-help" class="form-text">max 20 characters</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="tshirt-font">Choose font:</label>
+                        <select id="tshirt-font" class="form-control">
+                            <option value="Arial">Arial</option>
+                            <option value="Times New Roman">Times New Roman</option>
+                            <option value="Verdana">Verdana</option>
+                            <option value="Monospace">Monospace</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="tshirt-font-size">Choose font size:</label>
+                        <input type="range" list="tickmarks" class="form-control-range" id="tshirt-font-size" min="12" max="36" step="3">
+                        <datalist id="tickmarks">
+                            <option value="12" label="12px"></option>
+                            <option value="15"></option>
+                            <option value="18" label="18px"></option>
+                            <option value="21"></option>
+                            <option value="24" label="24px"></option>
+                            <option value="27"></option>
+                            <option value="30" label="30px"></option>
+                            <option value="33"></option>
+                            <option value="36" label="36px"></option>
+                        </datalist>
+                    </div>
+                    <div class="form-group">
+                        <label>Choose text color:</label>
+                        <ul class="tshirt-colors">
+                            <li class="tshirt-color selected" data-color="black"></li>
+                            <li class="tshirt-color" data-color="blue"></li>
+                            <li class="tshirt-color" data-color="green"></li>
+                            <li class="tshirt-color" data-color="red"></li>
+                        </ul>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Add to Cart</button>
+                        <button type="button" class="btn btn-danger" id="btn-remove">Remove from Cart</button>
+                        <div class="error-message"></div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-12 col-md-3 d-flex section">
+                <div class="cart">
+                    <h4>Shopping Cart</h4>
+                    <div id="cart-message">
+                        Cart is empty
+                    </div>
+                    <div class="cart-item hide">
+                        <h5>Custom Shirt</h5>
+                        <span id="qty">0</span> x $20.00
+                    </div>
+                    <hr/>
+                    <div class="cart-pricing">
+                        <span>Subtotal:</span>
+                        <span id="subtotal">$0.00</span>
+                    </div>
+                    <div class="cart-pricing">
+                        <span>Tax:</span>
+                        <span id="tax">$0.00</span>
+                    </div>
+                    <div class="cart-pricing">
+                        <span>Total:</span>
+                        <span id="total">$0.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="template-container">
+        <div class="template" draggable="true" id="template1" ondragstart="drag(event)">
+            <a href="#">
+                <img src="t1.jpg" alt="Template 1">
+            </a>
+        </div>
+        <div class="template" draggable="true" id="template2" ondragstart="drag(event)">
+            <a href="#">
+                <img src="t2.jpg" alt="Template 2">
+            </a>
+        </div>
+        <div class="template" draggable="true" id="template3" ondragstart="drag(event)">
+            <a href="#">
+                <img src="t3.jpg" alt="Template 3">
+            </a>
+        </div>
+        <div class="template" draggable="true" id="template4" ondragstart="drag(event)">
+            <a href="#">
+                <img src="t4.jpg" alt="Template 4">
+            </a>
+        </div>
+        <div class="template" draggable="true" id="template5" ondragstart="drag(event)">
+            <a href="#">
+                <img src="t5.jpg" alt="Template 5">
+            </a>
+        </div>
+        <div class="template" draggable="true" id="template6" ondragstart="drag(event)">
+            <a href="#">
+                <img src="t6.jpg" alt="Template 6">
+            </a>
+        </div>
+        <div class="template" draggable="true" id="template7" ondragstart="drag(event)">
+            <a href="#">
+                <img src="t7.jpg" alt="Template 7">
+            </a>
+        </div>
+        <div class="template" draggable="true" id="template8" ondragstart="drag(event)">
+            <a href="#">
+                <img src="t8.jpg" alt="Template 8">
+            </a>
+        </div>
+        <div class="template" draggable="true" id="template9" ondragstart="drag(event)">
+            <a href="#">
+                <img src="t9.jpg" alt="Template 9">
+            </a>
+        </div>
+        <div class="template" draggable="true" id="template10" ondragstart="drag(event)">
+            <a href="#">
+                <img src="t10.jpg" alt="Template 10">
+            </a>
+        </div>
+        <div class="template" draggable="true" id="template11" ondragstart="drag(event)">
+            <a href="#">
+                <img src="t11.jpg" alt="Template 11">
+            </a>
+        </div>
+        <div class="template" draggable="true" id="template12" ondragstart="drag(event)">
+            <a href="#">
+                <img src="t12.jpg" alt="Template 12">
+            </a>
+        </div>
+        <!-- Add more template divs as needed -->
+    </div>
+
+    <script src="C:\Users\PC\Desktop\webathon\zoom.js">
+    </script>
+    <script>
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Select all template images
+    const templateImages = document.querySelectorAll('.template img');
+
+    // Get the T-shirt image container element
+    const tshirtContainer = document.querySelector('.tshirt');
+
+    // Add event listener to each template image
+    templateImages.forEach(function(image) {
+        image.addEventListener('click', function() {
+            // Create an overlay div for the template image
+            const overlay = document.createElement('div');
+            overlay.id = 'template-overlay';
+
+            // Create an image element for the template image
+            const templateOverlayImage = document.createElement('img');
+            templateOverlayImage.src = image.src;
+
+            // Append the template image to the overlay div
+            overlay.appendChild(templateOverlayImage);
+
+            // Add the overlay to the T-shirt container
+            tshirtContainer.appendChild(overlay);
+
+            // Adjust the size of the overlay image
+            templateOverlayImage.style.width = '50%'; // Adjust the width as needed
+            templateOverlayImage.style.height = 'auto'; // Maintain aspect ratio
+        });
+    });
+});
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+            // Enable dragging functionality
+            let draggableText = document.getElementById('tshirt-preview');
+            let offsetX, offsetY;
+
+            draggableText.addEventListener('mousedown', function(e) {
+                e.preventDefault();
+                offsetX = e.clientX - draggableText.getBoundingClientRect().left;
+                offsetY = e.clientY - draggableText.getBoundingClientRect().top;
+
+                document.addEventListener('mousemove', dragElement);
+                document.addEventListener('mouseup', function() {
+                    document.removeEventListener('mousemove', dragElement);
+                });
+            });
+
+            function dragElement(e) {
+                let x = e.clientX - offsetX;
+                let y = e.clientY - offsetY;
+
+                draggableText.style.left = x + 'px';
+                draggableText.style.top = y + 'px';
+            }
+        });
+
+
+        document.addEventListener('DOMContentLoaded', function() {
+    const colorOptions = document.querySelectorAll('.color-option');
+    const tshirtPreviewImage = document.getElementById('tshirt-image');
+
+    colorOptions.forEach(function(option) {
+        option.addEventListener('click', function() {
+            const color = this.getAttribute('data-color');
+            const imageUrl = '${color}hoodie.jpg';
+            tshirtPreviewImage.src = imageUrl;
+        });
+    });
+});
+
+		document.querySelector("#tshirt-text").oninput=function()
+		{
+			let textInput= document.querySelector("#tshirt-text").value;
+			console.log(textInput);
+			document.querySelector("#tshirt-preview").innerHTML=textInput;
+			if (textInput.length>20)
+			{
+				this.nextElementSibling.style.color="red";
+
+				document.querySelector("#tshirt-text").classList.add("is-invalid");
+				console.log("too big");
+			}
+			else
+			{
+				this.nextElementSibling.style.color="black";
+				document.querySelector("#tshirt-text").classList.remove("is-invalid");
+				console.log("good");
+			}
+		}
+		document.querySelector("#tshirt-font").onchange=function()
+		{
+			let font= document.querySelector("#tshirt-font").value;
+			console.log(font);
+			document.querySelector("#tshirt-preview").style.fontFamily=font; 
+
+
+		}
+		document.querySelector("#tshirt-font-size").onchange=function()
+		{
+			let sizeofFont=document.querySelector("#tshirt-font-size").value;
+			console.log(sizeofFont);
+			document.querySelector("#tshirt-preview").style.fontSize=sizeofFont+"px";
+
+
+		}
+		
+		const colors = document.querySelectorAll(".tshirt-color");
+		for (let colorT of colors) 
+		{
+			colorT.onclick=function()
+			{
+				for (let colorElm of colors) {
+					colorElm.classList.remove('selected')
+				}
+				let color= colorT.dataset.color;
+				console.log(color);
+				document.querySelector("#tshirt-preview").style.color = color;
+				colorT.classList.add("selected");
+			}
+
+		}
+		
+		let amount=0;
+
+		document.querySelector("#tshirt-form").onsubmit = function(event)
+		{
+			let textInput= document.querySelector("#tshirt-text").value;
+			console.log(textInput);
+			document.querySelector("#tshirt-preview").innerHTML=textInput;
+			event.preventDefault();
+			document.querySelector(".error-message").innerHTML="Add or Change Text!";
+		
+
+			if (textInput.length<=20 && textInput.length!=0)
+			{
+				amount++;
+				console.log(amount);
+				let subtotal=amount*20;
+				let tax= subtotal*0.095;
+				let total= tax+subtotal;
+				document.querySelector("#cart-message").classList.add("hide");
+				document.querySelector(".cart-item").classList.remove("hide");
+				document.querySelector(".error-message").classList.add("hide");
+				document.querySelector("#qty").innerHTML = amount;
+				document.querySelector("#subtotal").innerHTML = "$" + subtotal.toFixed(2);
+				document.querySelector("#tax").innerHTML = "$" + tax.toFixed(2);
+				document.querySelector("#total").innerHTML = "$" + total.toFixed(2);
+			}
+			else
+			{
+				document.querySelector(".error-message").classList.add("is-invalid");
+				document.querySelector("#subtotal").innerHTML = "$0.00";
+				document.querySelector("#tax").innerHTML = "$0.00";
+				document.querySelector("#total").innerHTML = "$0.00";
+
+			}
+		}
+
+		document.querySelector("#btn-remove").onclick = function(event)
+		{
+			amount=0;
+			document.querySelector(".cart-item").classList.add("hide");
+			document.querySelector("#cart-message").classList.remove("hide");
+			document.querySelector("#subtotal").innerHTML = "$0.00";
+			document.querySelector("#tax").innerHTML = "$0.00";
+			document.querySelector("#total").innerHTML = "$0.00";
+
+		}
+    </script>
+</body>
+</html>
