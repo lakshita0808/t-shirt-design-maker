@@ -1,22 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>T-Shirt Maker</title>
     <link rel="stylesheet" href="1.css">
-    
-    
-       
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="question.css">
+
+    <link href="testimonial.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+
 </head>
+
 <body>
     <header>
         <h1>T-Shirt Maker</h1>
         <nav>
             <ul>
                 <li><a href="index.html" id="home">Home</a></li>
-                <li><a href="design.html" id="designs">Designs</a></li>
-                <li><a href="newcustom.html" id="custom">Custom</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Customize</button>
+                        <div class="dropdown-content">
+                            <a href="newcustom.html">T-Shirt</a>
+                            <a href="customh.html">Hoodie</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Design</button>
+                        <div class="dropdown-content">
+                            <a href="design.html">T-Shirt</a>
+                            <a href="hoodiedesign.html">Hoodie</a>
+                            <a href="designjersey.html">Jersey</a>
+                        </div>
+                    </div>
+                </li>
+
                 <li><a href="contact.html" id="contact">Contact</a></li>
             </ul>
         </nav>
@@ -55,51 +82,200 @@
                     </div>
                 </div>
                 <div class="content-container">
-                    <div id="text2">
-                        <h2>Design shirts with creativity on your side.</h2>
-                        <br>
-                        <p> Wear your personality on your sleeve by designing a custom t-shirt graphic with the templates . All the creative tools you need to personalize your own apparel are guaranteed to unleash your inner fashion designer. Discover how easily you can make custom t-shirt graphics with aesthetic appeal.</p>
-                    </div>
-                    <div class="image-container">
-                        <img src="t7.jpg" alt="Image 1">
-                        <img src="t8.jpg" alt="Image 2">
-                        <img src="t9.jpg" alt="Image 3">
-                    </div>
-                </div>
-                <div class="text89">
-                    <div id="text3">
-                        <h2>Custom t-shirt design made easy.</h2>
-
-                        <br>
-                        <p>Stand out in a crowd with a one-of-a-kind custom t-shirt design. Your unique style sets you apart— so showcase it on your t-shirt. With the free  t-shirt maker app, it’s easy to take your creative vision and apply it to apparel, with no prior design experience needed.</p>
-                        
- 
-                    </div>
-                </div>
-                <div class="text89">
-                    <div id="text3">
-                        <h2>Create a shirt online anytime.</h2>
-
-                        <br>
-                        <p>Do you have a great sense of humor? How about saying that with a t-shirt design? With the Adobe Express free t-shirt maker app, you can use an image, illustration, or text to showcase your unique t-shirt design ideas. Custom t-shirt designs can come in handy for special occasions such as school, sporting, or celebratory events. It has templates and design assets for every occasion, so you can sport a personalized look wherever you go.</p>
-                        
- 
+                    <div class="hell">
+                        <div id="text2">
+                            <div class="first">
+                                <h3 id="hila">Design shirts with creativity on your side.</h3>
+                            </div>
+                            <div class="second">
+                                <p id="dila"> Wear your personality on your sleeve by designing a custom t-shirt graphic
+                                    with the
+                                    templates . All the creative tools you need to personalize your own apparel are
+                                    guaranteed
+                                    to unleash your inner fashion designer. Discover how easily you can make custom
+                                    t-shirt
+                                    graphics with aesthetic appeal.</p>
+                            </div>
+                        </div>
+                        <div class="image-container">
+                            <img src="t7.jpg" alt="Image 1">
+                            <img src="t8.jpg" alt="Image 2">
+                            <img src="t9.jpg" alt="Image 3">
+                        </div>
                     </div>
                 </div>
-                    
-        
-                        
+                <div class="text89 all">
+                    <div id="text3" class="in">
+                        <div class="first">
+                            <h3 id="hila">Custom t-shirt design made easy.</h3>
+                        </div>
+                        <div class="second">
+                            <p id="dila"> Stand out in a crowd with a one-of-a-kind custom t-shirt design. Your unique
+                                style sets
+                                you
+                                apart— so showcase it on your t-shirt. With the free t-shirt maker app, it’s easy to
+                                take
+                                your creative vision and apply it to apparel, with no prior design experience needed.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text89 all">
+                    <div id="text3" class="in">
+                        <div class="first">
+                            <h3 id="hila">Create a shirt online anytime.</h3>
+                        </div>
+                        <div class="second">
+                            <p id="dila"> Do you have a great sense of humor? How about saying that with a t-shirt
+                                design? With
+                                the
+                                Adobe Express free t-shirt maker app, you can use an image, illustration, or text to
+                                showcase your unique t-shirt design ideas. Custom t-shirt designs can come in handy for
+                                special occasions such as school, sporting, or celebratory events. It has templates and
+                                design assets for every occasion, so you can sport a personalized look wherever you go.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </section>
             <section class="designs" id="designsSection">
                 <!-- Designs will be dynamically added here -->
             </section>
         </main>
     </div>
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="faq-header">Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h3 class="faq-question">How can I design my own t-shirt?</h3>
+                    <p class="faq-answer">You can design your own t-shirt by using our coustom design. Simply select a t-shirt template, add text, images customize the design to your liking.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">What file formats are supported for uploading designs?</h3>
+                    <p class="faq-answer">We support various file formats including JPG, PNG, SVG, and PDF for uploading your designs.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">How big should my t-shirt design be?</h3>
+                    <p class="faq-answer">You can make your design as big or as small as you’d like, but consider how it will appear on a shirt. If you have small details or text in your design, make sure they’re big enough to read from a distance. Double check with your printer to find out exact dimensions needed for printing.</p>
+                </div>
+                <!-- Add more FAQ items as needed -->
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    
+    
+    <h2 class="review-header">Reviews</h2>
+    <section class="testimonials">
+        <div class="container">
+    
+          <div class="row">
+            <div class="col-sm-12">
+              <div id="customers-testimonials" class="owl-carousel">
+    
+                <!--TESTIMONIAL 1 -->
+                <div class="item">
+                  <div class="shadow-effect">
+                    <img class="img-circle" src="t1.jpg" alt="">
+                    <p>Intuitive interface and a wide range of design options make this app a must-have for anyone looking to create unique t-shirt designs. Seamless integration with printing services ensures high-quality results every time!</p>
+                  </div>
+                  <div class="testimonial-name">OMAR</div>
+                </div>
+                <!--END OF TESTIMONIAL 1 -->
+                <!--TESTIMONIAL 2 -->
+                <div class="item">
+                  <div class="shadow-effect">
+                    <img class="img-circle" src="t4.jpg" alt="">
+                    <p>As someone with minimal design skills, I was pleasantly surprised by how easy it was to use this app. The pre-made templates are fantastic, and the customization options are endless. Plus, the quick turnaround for printing and delivery is unbeatable!</p>
+                  </div>
+                  <div class="testimonial-name">KRIN PRATAP</div>
+                </div>
+                <!--END OF TESTIMONIAL 2 -->
+                <!--TESTIMONIAL 3 -->
+                <div class="item">
+                  <div class="shadow-effect">
+                    <img class="img-circle" src="t7.jpg" alt="">
+                    <p>I've tried several t-shirt design apps, but this one stands out for its user-friendly interface and extensive library of graphics and fonts. Whether you're a beginner or a seasoned designer, you'll find everything you need to bring your ideas to life.</p>
+                  </div>
+                  <div class="testimonial-name">RANJAN</div>
+                </div>
+                <!--END OF TESTIMONIAL 3 -->
+                <!--TESTIMONIAL 4 -->
+                <div class="item">
+                    <div class="shadow-effect">
+                      <img class="img-circle" src="t6.jpg" alt="">
+                      <p>This app is a game-changer for small businesses and entrepreneurs. The ability to design and order custom t-shirts in just a few clicks has saved me so much time and money. Plus, the print quality is top-notch, and the customer service is exceptional!</p>
+                    </div>
+                    <div class="testimonial-name"> KUMAR</div>
+                  </div>
+                  <!--END OF TESTIMONIAL 4 -->
+                  
+                </div>
+              </div>
+            </div>
+            </div>
+          </section>
+          <!-- END OF TESTIMONIALS -->
+        
     <footer>
         <p>&copy; 2024 T-Shirt Maker</p>
     </footer>
     <script src="1.js"></script>
     <script src="zoom.js">
     </script>
+    <script>
+           // JavaScript to handle image animation
+           document.addEventListener("DOMContentLoaded", function() {
+            const images = document.querySelectorAll(".image-container img");
+            let currentIndex = 0;
+
+            function showNextImage() {
+                // Hide the current image
+                images[currentIndex].style.display = "none";
+
+                // Move to the next image or loop back to the first image
+                currentIndex = (currentIndex + 1) % images.length;
+
+                // Display the next image
+                images[currentIndex].style.display = "block";
+
+                // Repeat the process after a certain time interval (e.g., 3 seconds)
+                setTimeout(showNextImage, 3000);
+            }
+
+            // Start the image animation
+            showNextImage();
+        });
+        jQuery(document).ready(function($) {
+        "use strict";
+        //  TESTIMONIALS CAROUSEL HOOK
+        $('#customers-testimonials').owlCarousel({
+            loop: true,
+            center: true,
+            items: 3,
+            margin: 0,
+            autoplay: true,
+            dots:true,
+            autoplayTimeout: 4500,
+            smartSpeed: 450,
+            responsive: {
+              0: {
+                items: 1
+              },
+              768: {
+                items: 2
+              },
+              1170: {
+                items: 3
+              }
+            }
+        });
+    });
+        </script>
+<!-- TESTIMONIALS -->
+
 </body>
+
 </html>
