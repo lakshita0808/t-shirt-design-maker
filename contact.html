@@ -4,17 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-    <link rel="stylesheet" href="1.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="1.css">
+    <link rel="stylesheet" href="responsive.css"> <!-- Link to your CSS file -->
 </head>
 <body>
     <header>
-        <h1>Contact Us</h1>
+        <h1>CONTACT-US</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="design.html">Designs</a></li>
-                <li><a href="newcustom.html">Custom</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="index.html" id="home">Home</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Customize</button>
+                        <div class="dropdown-content">
+                            <a href="newcustom.html">T-Shirt</a>
+                            <a href="customh.html">Hoodie</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Design</button>
+                        <div class="dropdown-content">
+                            <a href="design.html">T-Shirt</a>
+                            <a href="hoodiedesign.html">Hoodie</a>
+                            <a href="designjersey.html">Jersey</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li><a href="contact.html" id="contact">Contact</a></li>
             </ul>
         </nav>
     </header>
