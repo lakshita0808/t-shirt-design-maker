@@ -4,31 +4,31 @@ body {
     font-family: Arial, sans-serif;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-}
 
+header {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 nav ul {
     list-style: none;
-    padding: 0; /* Remove default padding */
+    padding: 0;
+    /* Remove default padding */
     margin-top: 20px;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 150px; /* Adjust the margin-right to add space between links */
+    /* margin-right: 150px; */
+    /* Adjust the margin-right to add space between links */
 }
 
 nav ul li:last-child {
-    margin-right: 0; /* Remove margin-right from the last list item */
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
+    margin-right: 0;
+    /* Remove margin-right from the last list item */
 }
 
 
