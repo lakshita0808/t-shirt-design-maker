@@ -19,19 +19,56 @@ header {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+#text2 {
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+.all .in .first {
+
+    text-align: center;
+}
+
+/* .all .in .second {} */
+.hell {
+    max-width: 90%;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#hila {
+    font-size: 28px;
+    text-align: center;
+}
+
+#dila {
+    font-size: 18px;
+    text-align: center;
+}
+
+
+
+
 nav ul {
     list-style: none;
-    padding: 0; /* Remove default padding */
+    padding: 0;
+    /* Remove default padding */
     margin-top: 20px;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 150px; /* Adjust the margin-right to add space between links */
+    /* margin-right: 150px; */
+    /* Adjust the margin-right to add space between links */
 }
 
 nav ul li:last-child {
-    margin-right: 0; /* Remove margin-right from the last list item */
+    margin-right: 0;
+    /* Remove margin-right from the last list item */
 }
 
 nav ul li a {
@@ -57,7 +94,8 @@ main {
 
 .hero h2 {
     font-size: 60px;
-    margin-bottom: 30px; /* Reduce margin-bottom to move h2 somewhat above */
+    margin-bottom: 30px;
+    /* Reduce margin-bottom to move h2 somewhat above */
     color: #000000;
     background-color: #fff;
     display: inline-block;
@@ -66,9 +104,17 @@ main {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+/* 
+#hila {
+    font-size: 30px;
+    font-weight: 700;
+} */
+
+
 .hero h5 {
     font-size: 20px;
-    margin-bottom: 30px; /* Add more margin-bottom to create space between p and btn */
+    margin-bottom: 30px;
+    /* Add more margin-bottom to create space between p and btn */
     color: #000000;
     background-color: #fff;
     display: inline-block;
@@ -81,10 +127,11 @@ main {
     align-items: center;
     margin: 20px;
 }
-.text89{
+
+.text89 {
     display: flex;
     align-items: center;
-    margin: 200px;  
+    /* margin: 200px; */
 }
 
 #text1 {
@@ -95,37 +142,42 @@ main {
     text-align: left;
     text-size-adjust: 20px;
 }
+
 /* Add this CSS to your existing CSS file or create a new one */
 
 #text2 {
     max-width: 50vw;
     padding: 20px;
     background-color: #fff;
-border-radius: 8px;
+    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: left;
-    margin-right: 80px; /* Add margin to create space between text and video */
+    margin-right: 80px;
+    /* Add margin to create space between text and video */
     justify-content: space-around;
 }
+
 #text3 {
     width: 100vw;
     padding: 20px;
     background-color: #fff;
-border-radius: 8px;
+    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     text-size-adjust: 20px;
     justify-content: space-around;
-    
+
 }
 
 .content-container {
     display: flex;
-    align-items: flex-start; /* Align items at the start of the flex container */
+    align-items: flex-start;
+    /* Align items at the start of the flex container */
 }
 
 .text-content {
-    flex: 1; /* Take up remaining space */
+    flex: 1;
+    /* Take up remaining space */
 }
 
 
@@ -152,7 +204,8 @@ footer {
 }
 
 .designs {
-    display: none; /* Initially hide the designs section */
+    display: none;
+    /* Initially hide the designs section */
     padding: 20vw;
     justify-content: space-around;
     align-items: center;
@@ -187,15 +240,17 @@ body {
     max-width: 100%;
     height: auto;
 }
+
 .template-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-around;
+    justify-content: space-around;
     padding: 20px;
 }
 
 .template {
-    width: 23%; /* Adjust as needed for proper spacing */
+    width: 23%;
+    /* Adjust as needed for proper spacing */
     margin-bottom: 20px;
     box-sizing: border-box;
     border: 1px solid #ccc;
@@ -207,7 +262,57 @@ body {
     object-fit: cover;
     display: block;
 }
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
 
+.dropbtn {
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    font-size: large;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white; /* Change background color to match other tabs */
+    min-width: 130px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white; /* Change text color to white */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #333; /* Change hover background color to match other tabs */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Adjust margin-right for spacing */
+.dropdown, .dropdown-content {
+    margin-right: 20px; /* Adjust as needed */
+}
+
+/* Remove margin-right from the last dropdown item */
+.nav li:last-child .dropdown, .nav li:last-child .dropdown-content {
+    margin-right: 0;
+}
+
+/* Additional styles to match other tabs */
+nav ul li:hover a {
+    background-color: #333; /* Change hover background color to match other tabs */
+}
 
 
 /* CSS styles for contact details */
@@ -257,7 +362,9 @@ body {
     margin-bottom: 10px;
 }
 
-.color-picker, .text-tools, .image-tools {
+.color-picker,
+.text-tools,
+.image-tools {
     margin-bottom: 20px;
 }
 
@@ -280,42 +387,58 @@ canvas {
 #droppedItems {
     position: absolute;
 }
+
 @keyframes fadeIn {
     0% {
-        opacity: 0; /* Start with opacity 0 */
-        transform: scale(0.8); /* Start with a smaller size */
+        opacity: 0;
+        /* Start with opacity 0 */
+        transform: scale(0.8);
+        /* Start with a smaller size */
     }
+
     100% {
-        opacity: 1; /* End with opacity 1 */
-        transform: scale(1); /* End with original size */
+        opacity: 1;
+        /* End with opacity 1 */
+        transform: scale(1);
+        /* End with original size */
     }
 }
 
 /* Apply the animation to images */
 .image-container img {
-    opacity: 0; /* Initially hide images */
-    animation: fadeIn 1s ease-in-out forwards; /* Apply animation */
-   
-    object-fit: cover; /* Fit image within container */
-    border-radius: 8px; /* Add border radius if needed */
-    margin-bottom: 20px; /* Add spacing between images */
-    width: 20vw; /* Set the width of each image */
-    height: 20vw; /* Set the height of each image */
-    object-fit: cover; /* Maintain aspect ratio and cover the container */
-    border-radius: 8px; /* Add border radius if desired */
+    opacity: 0;
+    /* Initially hide images */
+    animation: fadeIn 1s ease-in-out forwards;
+    /* Apply animation */
+
+    object-fit: cover;
+    /* Fit image within container */
+    border-radius: 8px;
+    /* Add border radius if needed */
+    margin-bottom: 20px;
+    /* Add spacing between images */
+    width: 20vw;
+    /* Set the width of each image */
+    height: 20vw;
+    /* Set the height of each image */
+    object-fit: cover;
+    /* Maintain aspect ratio and cover the container */
+    border-radius: 8px;
+    /* Add border radius if desired */
 
 }
 
 
 
 .image-container {
-    width: 20vw; /* Set the width of each image */
-    height: 20vw; /* Set the height of each image */
-    object-fit: cover; /* Maintain aspect ratio and cover the container */
-    border-radius: 8px; /* Add border radius if desired */
+    width: 20vw;
+    /* Set the width of each image */
+    height: 20vw;
+    /* Set the height of each image */
+    object-fit: cover;
+    /* Maintain aspect ratio and cover the container */
+    border-radius: 8px;
+    /* Add border radius if desired */
     overflow: hidden;
-   
+
 }
-
-
-
