@@ -1,6 +1,36 @@
 body {
 	background-color: #F1F7ED;
 }
+header {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    /* Remove default padding */
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline;
+    /* margin-right: 150px; */
+    /* Adjust the margin-right to add space between links */
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+    /* Remove margin-right from the last list item */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
 img {
 	width: 100%;
 }
@@ -106,3 +136,55 @@ datalist {
 	user-select: none;
 	z-index: 100; /* Ensure the text is on top of the image */
 }
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    font-size: large;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white; /* Change background color to match other tabs */
+    min-width: 130px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white; /* Change text color to white */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #333; /* Change hover background color to match other tabs */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Adjust margin-right for spacing */
+.dropdown, .dropdown-content {
+    margin-right: 20px; /* Adjust as needed */
+}
+
+/* Remove margin-right from the last dropdown item */
+.nav li:last-child .dropdown, .nav li:last-child .dropdown-content {
+    margin-right: 0;
+}
+
+/* Additional styles to match other tabs */
+nav ul li:hover a {
+    background-color: #333; /* Change hover background color to match other tabs */
+}
+
