@@ -1,172 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>T-Shirt Maker</title>
-    <link rel="stylesheet" href="1.css">
-    <link rel="stylesheet" href="responsive.css">
-    <link rel="stylesheet" href="question.css">
+    <title>T-shirt Maker</title>
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
     <link href="testimonial.css" rel="stylesheet" />
+    
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="1.js" defer></script>
+    <!--FONT AWESOME-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="responsive.css" >
+<link rel="stylesheet" href="1.css" >
+<!--GOOGLE FONTS-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
+    <script>
+    jQuery(document).ready(function($) {
+    "use strict";
+    //  TESTIMONIALS CAROUSEL HOOK
+    $('#customers-testimonials').owlCarousel({
+        loop: true,
+        center: true,
+        items: 3,
+        margin: 0,
+        autoplay: true,
+        dots:true,
+        autoplayTimeout: 4500,
+        smartSpeed: 450,
+        responsive: {
+          0: {
+            items: 1
+          },
+          768: {
+            items: 2
+          },
+          1170: {
+            items: 3
+          }
+        }
+    });
+});
+    </script>
+    <style>
+        .logo {
+            border-radius: 50%;
+        }
 
-
+    </style>
 </head>
 
-<body>
-    <header>
-        <h1>T-Shirt Maker</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html" id="home">Home</a></li>
-                <li>
-                    <div class="dropdown">
-                        <button class="dropbtn">Customize</button>
-                        <div class="dropdown-content">
-                            <a href="newcustom.html">T-Shirt</a>
-                            <a href="customh.html">Hoodie</a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="dropdown">
-                        <button class="dropbtn">Design</button>
-                        <div class="dropdown-content">
-                            <a href="design.html">T-Shirt</a>
-                            <a href="hoodiedesign.html">Hoodie</a>
-                            <a href="designjersey.html">Jersey</a>
-                        </div>
-                    </div>
-                </li>
+</html>
 
-                <li><a href="contact.html" id="contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="background-image">
-        <main id="main">
-            <section class="hero">
-                <h2>WELCOME</h2>
-                <br>
-                <h5>CHOOSE FROM OUR WIDE RANGE OF DESIGN OR CUSTOM YOUR OWN!</h5>
-                <div class="template-container">
-                    <div class="template" draggable="true" id="template1" ondragstart="drag(event)">
-                        <a href="#">
-                            <img src="t1.jpg" alt="Template 1">
-                        </a>
-                    </div>
-                    <div class="template" draggable="true" id="template2" ondragstart="drag(event)">
-                        <a href="#">
-                            <img src="t2.jpg" alt="Template 2">
-                        </a>
-                    </div>
-                    <div class="template" draggable="true" id="template3" ondragstart="drag(event)">
-                        <a href="#">
-                            <img src="t3.jpg" alt="Template 3">
-                        </a>
-                    </div>
-                    <div class="template" draggable="true" id="template4" ondragstart="drag(event)">
-                        <a href="#">
-                            <img src="t4.jpg" alt="Template 4">
-                        </a>
-                    </div>
-                    <div class="template" draggable="true" id="template5" ondragstart="drag(event)">
-                        <a href="#">
-                            <img src="t5.jpg" alt="Template 5">
-                        </a>
-                    </div>
-                </div>
-                <div class="content-container">
-                    <div class="hell">
-                        <div id="text2">
-                            <div class="first">
-                                <h3 id="hila">Design shirts with creativity on your side.</h3>
-                            </div>
-                            <div class="second">
-                                <p id="dila"> Wear your personality on your sleeve by designing a custom t-shirt graphic
-                                    with the
-                                    templates . All the creative tools you need to personalize your own apparel are
-                                    guaranteed
-                                    to unleash your inner fashion designer. Discover how easily you can make custom
-                                    t-shirt
-                                    graphics with aesthetic appeal.</p>
-                            </div>
-                        </div>
-                        <div class="image-container">
-                            <img src="t7.jpg" alt="Image 1">
-                            <img src="t8.jpg" alt="Image 2">
-                            <img src="t9.jpg" alt="Image 3">
-                        </div>
-                    </div>
-                </div>
-                <div class="text89 all">
-                    <div id="text3" class="in">
-                        <div class="first">
-                            <h3 id="hila">Custom t-shirt design made easy.</h3>
-                        </div>
-                        <div class="second">
-                            <p id="dila"> Stand out in a crowd with a one-of-a-kind custom t-shirt design. Your unique
-                                style sets
-                                you
-                                apart— so showcase it on your t-shirt. With the free t-shirt maker app, it’s easy to
-                                take
-                                your creative vision and apply it to apparel, with no prior design experience needed.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="text89 all">
-                    <div id="text3" class="in">
-                        <div class="first">
-                            <h3 id="hila">Create a shirt online anytime.</h3>
-                        </div>
-                        <div class="second">
-                            <p id="dila"> Do you have a great sense of humor? How about saying that with a t-shirt
-                                design? With
-                                the
-                                Adobe Express free t-shirt maker app, you can use an image, illustration, or text to
-                                showcase your unique t-shirt design ideas. Custom t-shirt designs can come in handy for
-                                special occasions such as school, sporting, or celebratory events. It has templates and
-                                design assets for every occasion, so you can sport a personalized look wherever you go.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="designs" id="designsSection">
-                <!-- Designs will be dynamically added here -->
-            </section>
-        </main>
+<body>
+
+    <!--Header section -->
+
+    <div class="header ">
+      <div class="container">
+      <a href="index.html" class="logo"><img src="t6.jpg" alt="logo" height="60px" width="60px" style="border-radius: 50%;"></a>
+      <div class="header-right">
+        <a href="index2.html">Home</a>
+        <a href="newcustom.html">Customize</a>
+        <a href="design.html">Design </a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </div>
-    <section class="faq-section">
-        <div class="container">
-            <h2 class="faq-header">Frequently Asked Questions</h2>
-            <div class="faq-list">
-                <div class="faq-item">
-                    <h3 class="faq-question">How can I design my own t-shirt?</h3>
-                    <p class="faq-answer">You can design your own t-shirt by using our coustom design. Simply select a t-shirt template, add text, images customize the design to your liking.</p>
-                </div>
-                <div class="faq-item">
-                    <h3 class="faq-question">What file formats are supported for uploading designs?</h3>
-                    <p class="faq-answer">We support various file formats including JPG, PNG, SVG, and PDF for uploading your designs.</p>
-                </div>
-                <div class="faq-item">
-                    <h3 class="faq-question">How big should my t-shirt design be?</h3>
-                    <p class="faq-answer">You can make your design as big or as small as you’d like, but consider how it will appear on a shirt. If you have small details or text in your design, make sure they’re big enough to read from a distance. Double check with your printer to find out exact dimensions needed for printing.</p>
-                </div>
-                <!-- Add more FAQ items as needed -->
+    </div>
+    <script>
+    function toggleMenu() {
+      var menu = document.querySelector('.header-right');
+      var hamburger = document.querySelector('.hamburger');
+    
+      menu.style.display = (menu.style.display === 'none' || menu.style.display === '') ? 'block' : 'none';
+      hamburger.classList.toggle('active');
+    }
+    </script>
+        
+      <iframe src="carousel.html" width="100%" height="680px" frameborder="0" ></iframe>
+ 
+    <!--header ending-->
+    
+
+
+
+
+
+    <!--content showcase-->
+
+    <body id="hello2">
+        <header class="container" id="art">
+          <div class="faq-header container" style="text-align: center !important;" style="margin-top: 100px !important;">Design Collection </div>
+          <hr>
+        </header>
+        
+        
+
+        <div class="wrapper container" id="hello">
+
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <div class="itiscard">
+                <img src="t3.jpg" alt="img" draggable="false">
+                <img src="t11.jpg" alt="img" draggable="false">
+                <img src="t7.jpg" alt="img" draggable="false">
+                <img src="t1.jpg" alt="img" draggable="false">
+                <img src="t2.jpg" alt="img" draggable="false">
+                <img src="t8.jpg" alt="img" draggable="false">
+
             </div>
+            <i id="right" class="fa-solid fa-angle-right"></i>
         </div>
-    </section>
+    </body>
+
+
+    <div class="content-container">
+      <div class="hell">
+          <div id="text2">
+              <div class="first">
+                  <h3 id="hila">Design shirts with creativity on your side.</h3>
+              </div>
+              <div class="second">
+                  <p id="dila"> Wear your personality on your sleeve by designing a custom t-shirt graphic
+                      with the
+                      templates . All the creative tools you need to personalize your own apparel are
+                      guaranteed
+                      to unleash your inner fashion designer. Discover how easily you can make custom
+                      t-shirt
+                      graphics with aesthetic appeal.</p>
+              </div>
+          </div>
+          <div class="image-container">
+              <img src="t7.jpg" alt="Image 1">
+              <img src="t8.jpg" alt="Image 2">
+              <img src="t9.jpg" alt="Image 3">
+          </div>
+      </div>
+    </div>
+
+
     <br>
     <br>
-    
-    
     <h2 class="review-header">Reviews</h2>
     <section class="testimonials">
         <div class="container">
@@ -219,63 +208,91 @@
           </section>
           <!-- END OF TESTIMONIALS -->
         
-    <footer>
-        <p>&copy; 2024 T-Shirt Maker</p>
-    </footer>
-    <script src="1.js"></script>
-    <script src="zoom.js">
-    </script>
-    <script>
-           // JavaScript to handle image animation
-           document.addEventListener("DOMContentLoaded", function() {
-            const images = document.querySelectorAll(".image-container img");
-            let currentIndex = 0;
+    
 
-            function showNextImage() {
-                // Hide the current image
-                images[currentIndex].style.display = "none";
 
-                // Move to the next image or loop back to the first image
-                currentIndex = (currentIndex + 1) % images.length;
 
-                // Display the next image
-                images[currentIndex].style.display = "block";
+<div class="faq-header container" style="text-align: center !important;">Frequently Asked Questions </div>
 
-                // Repeat the process after a certain time interval (e.g., 3 seconds)
-                setTimeout(showNextImage, 3000);
-            }
+<div class="faq-content container">
 
-            // Start the image animation
-            showNextImage();
-        });
-        jQuery(document).ready(function($) {
-        "use strict";
-        //  TESTIMONIALS CAROUSEL HOOK
-        $('#customers-testimonials').owlCarousel({
-            loop: true,
-            center: true,
-            items: 3,
-            margin: 0,
-            autoplay: true,
-            dots:true,
-            autoplayTimeout: 4500,
-            smartSpeed: 450,
-            responsive: {
-              0: {
-                items: 1
-              },
-              768: {
-                items: 2
-              },
-              1170: {
-                items: 3
-              }
-            }
-        });
-    });
-        </script>
-<!-- TESTIMONIALS -->
+  <div class="faq-question">
+    <input id="q1" type="checkbox" class="panel">
+    <div class="plus">+</div>
+    <label for="q1" class="panel-title">How can I design my own t-shirt</label>
+    <div class="panel-content">You can design your own t-shirt by using our coustom design. Simply select a t-shirt template, add text, images customize the design to your liking.</div>
+  </div>
+  
+  <div class="faq-question">
+    <input id="q2" type="checkbox" class="panel">
+    <div class="plus">+</div>
+    <label for="q2" class="panel-title">What file formats are supported for uploading designs?</label>
+    <div class="panel-content">We support various file formats including JPG, PNG, SVG, and PDF for uploading your designs.</div>
+  </div>
+  
+  <div class="faq-question">
+    <input id="q3" type="checkbox" class="panel">
+    <div class="plus">+</div>
+    <label for="q3" class="panel-title">How big should my t-shirt design be?</label>
+    <div class="panel-content">Yes, You can write to us by mail for you custom art.</div>
+  </div>
+  
+</div>
+
+
+<footer>
+  <p>&copy; 2024 T-Shirt Maker</p>
+</footer>
+
+  <script src="script.js" defer></script>
+  <script>
+    // JavaScript to handle image animation
+    document.addEventListener("DOMContentLoaded", function() {
+     const images = document.querySelectorAll(".image-container img");
+     let currentIndex = 0;
+
+     function showNextImage() {
+         // Hide the current image
+         images[currentIndex].style.display = "none";
+
+         // Move to the next image or loop back to the first image
+         currentIndex = (currentIndex + 1) % images.length;
+
+         // Display the next image
+         images[currentIndex].style.display = "block";
+
+         // Repeat the process after a certain time interval (e.g., 3 seconds)
+         setTimeout(showNextImage, 3000);
+     }
+
+     // Start the image animation
+     showNextImage();
+ });
+ jQuery(document).ready(function($) {
+ "use strict";
+ //  TESTIMONIALS CAROUSEL HOOK
+ $('#customers-testimonials').owlCarousel({
+     loop: true,
+     center: true,
+     items: 3,
+     margin: 0,
+     autoplay: true,
+     dots:true,
+     autoplayTimeout: 4500,
+     smartSpeed: 450,
+     responsive: {
+       0: {
+         items: 1
+       },
+       768: {
+         items: 2
+       },
+       1170: {
+         items: 3
+       }
+     }
+ });
+});
+ </script>
 
 </body>
-
-</html>
