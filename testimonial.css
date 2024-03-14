@@ -1,5 +1,5 @@
 .shadow-effect {
-    background: #ffcc00; /* Updated background color to a vibrant yellow */
+    background: white; /* Updated background color to a vibrant yellow */
     padding: 20px;
     border-radius: 4px;
     text-align: center;
@@ -20,7 +20,7 @@
     margin: -17px auto 0;
     display: table;
     width: auto;
-    background: #ff4d4d; /* Updated background color to a vibrant red */
+    background:black; /* Updated background color to a vibrant red */
     padding: 9px 35px;
     border-radius: 12px;
     text-align: center;
@@ -89,7 +89,7 @@ display: inline-block;
     position: absolute;
     width: 40%;
     height: 3px;
-    background-color: #ffcc00; /* Yellow color */
+    background-color:black; /* Yellow color */
     top: 50%;
 }
 
